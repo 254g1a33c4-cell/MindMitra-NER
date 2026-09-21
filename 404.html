@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Page not found — MindMate</title>
+<meta name="description" content="The MindMate page you were looking for could not be found. Return to the MindMate home page to continue with cognitive exercises and memory assistance." />
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#1f6b48" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231f6b48'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle'%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E" />
+<style>
+  /* Same tokens as index.html, kept inline so the 404 works offline and standalone */
+  :root{
+    --bg:#eef4ee; --surface:#ffffff; --surface-2:#f6faf6; --ink:#16281d; --ink-soft:#4a5f52;
+    --line:#d3e2d4; --primary:#1f6b48; --primary-dark:#144a32; --primary-tint:#e3f1e8;
+    --accent:#c98a3a; --accent-tint:#fbeed9;
+    --radius-lg:28px; --radius-md:18px; --shadow:0 10px 30px rgba(20,45,30,0.10);
+    --font-display:Georgia,"Times New Roman",serif;
+    --font-body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f1c14; --surface:#16281d; --surface-2:#1b3022; --ink:#eaf3ec; --ink-soft:#a9c2b2;
+      --line:#274633; --primary:#4caf7d; --primary-dark:#2f8f5b; --primary-tint:#1c3324;
+      --accent:#e0a856; --accent-tint:#2c2013; --shadow:0 10px 30px rgba(0,0,0,0.45);
+    }
+  }
+  *{box-sizing:border-box;}
+  html{font-size:16px;}
+  html[data-mm-font="small"]{font-size:15px;}
+  html[data-mm-font="large"]{font-size:18.5px;}
+  html[data-mm-font="xlarge"]{font-size:21px;}
+  html,body{margin:0;padding:0;max-width:100%;overflow-x:hidden;}
+  body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:1.125rem;line-height:1.5;
+       min-height:100vh;display:flex;flex-direction:column;}
+  h1,h2{font-family:var(--font-display);font-weight:600;margin:0;}
+  a{color:inherit;}
+  .topbar{background:var(--primary);color:#fff;padding:14px 20px;display:flex;align-items:center;gap:10px;}
+  .brand-mark{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,0.18);
+              display:flex;align-items:center;justify-content:center;font-size:22px;flex:none;}
+  .brand-text h1{color:#fff;font-size:1.35rem;}
+  .brand-text p{margin:0;font-size:0.82rem;color:rgba(255,255,255,0.85);}
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:32px 20px;}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);
+        box-shadow:var(--shadow);padding:clamp(24px,5vw,44px);max-width:560px;width:100%;text-align:center;}
+  .code{font-family:var(--font-display);font-size:clamp(3.4rem,14vw,5rem);line-height:1;color:var(--primary);margin-bottom:6px;}
+  .card h2{font-size:1.6rem;margin-bottom:10px;}
+  .card p{color:var(--ink-soft);margin:0 auto 26px;max-width:420px;}
+  .actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:none;
+       border-radius:999px;padding:16px 26px;font-weight:800;font-size:1.05rem;min-height:56px;
+       text-decoration:none;cursor:pointer;font-family:inherit;}
+  .btn-primary{background:var(--primary);color:#fff;}
+  .btn-primary:hover{background:var(--primary-dark);}
+  .btn-ghost{background:var(--surface-2);color:var(--ink);border:1.5px solid var(--line);}
+  .btn-ghost:hover{border-color:var(--primary);}
+  .btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+  @media (max-width:420px){ .actions .btn{width:100%;} }
+  .help{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);font-size:0.9rem;color:var(--ink-soft);}
+  .help a{color:var(--primary);font-weight:700;}
+  footer{text-align:center;color:var(--ink-soft);font-size:0.78rem;padding:16px 20px 28px;}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand-mark" aria-hidden="true">🧠</div>
+    <div class="brand-text"><h1>MindMate</h1><p>Cognitive Gaming &amp; Memory Assistance</p></div>
+  </div>
+
+  <main>
+    <div class="card">
+      <div class="code" aria-hidden="true">404</div>
+      <h2>We couldn't find that page</h2>
+      <p>The page you were looking for may have been moved or no longer exists. Everything else is working — let's get you back.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="index.html">🏠 Go to home page</a>
+        <button type="button" class="btn btn-ghost" onclick="history.back()">← Go back</button>
+      </div>
+      <div class="help">
+        Need help using MindMate? Call the support helpline:
+        <a href="tel:+919846198471">+91 98461 98471</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    MindMate is a cognitive assistance and exercise platform. It does not diagnose, prevent, or cure
+    medical conditions. Consult a qualified healthcare professional for medical concerns.<br />
+    <span style="opacity:0.75;">© 2026 AI-Based Cognitive Gaming and Memory Assistance Platform. All Rights Reserved.</span>
+  </footer>
+
+  <script>
+    // Honour the text-size preference chosen in the main app
+    try{
+      var f = localStorage.getItem("mindmate_font_size_v1");
+      if(["small","normal","large","xlarge"].indexOf(f) !== -1){
+        document.documentElement.setAttribute("data-mm-font", f);
+      }
+    }catch(e){ /* storage unavailable — default size is fine */ }
+  </script>
+</body>
+</html>
